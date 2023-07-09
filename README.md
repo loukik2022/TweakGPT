@@ -45,7 +45,7 @@ A ChatGpt clone with enhanced features.
 ```
 
 
-## Screenshots
+## Screenshot
 
 ![App Screenshot](/app.png?text=App+Screenshot+Here)
 

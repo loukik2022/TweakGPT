@@ -1,22 +1,22 @@
 
-# TweakGPT
+# 🚀 TweakGPT
 
 A ChatGpt clone with enhanced features.
 
+## 🔥 Features
+
+- Change GPT models
+- Change Tokens of models
+- Change Temperature of models
+- Change Top-p of models
+
+  
 ### API Reference (OpenAI API)
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `api_key` | `string` | **Required**. Your API key |
 
-
-
-## Features
-
-- Change GPT models
-- Change Tokens of models
-- Change Temperature of models
-- Change Top-p of models
 
 
 ## Run locally

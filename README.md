@@ -3,7 +3,7 @@
 
 A ChatGpt clone with enhanced features.
 
-## API Reference (OpenAI API)
+### API Reference (OpenAI API)
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |

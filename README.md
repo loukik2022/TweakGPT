@@ -28,7 +28,7 @@ A ChatGpt clone with enhanced features.
   npm install my-project 
   cd my-project
 ```
-2. Replace your own OpenAI API key with given temp key in index.js.
+2. Add your own OpenAI API key in index.js.
    ![Screenshot](/auth.png?raw=true "Optional Title") 
 
 3.  Run local backend server

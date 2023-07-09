@@ -6,7 +6,7 @@ const cors = require("cors");
 
 // OpenAI API key authentication
 const configuration = new Configuration({
-  apiKey: "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"
+  apiKey: "YOUR_API_KEY"
 });
 const openai = new OpenAIApi(configuration);
 

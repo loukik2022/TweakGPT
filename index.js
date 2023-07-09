@@ -90,7 +90,7 @@ app.get('/models', (req, res) => {
       res.send(modelsData);
     })
     .catch((err) => {
-      console.error(err);
+      console.error(err.response.statusText);
       res.send({
         gpt: "Failed to get models, please try again later. (Network Error!)"
       });

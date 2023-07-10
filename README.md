@@ -25,9 +25,10 @@ A ChatGpt clone with enhanced features.
   npm install openai express body-parser cors
 ```
 2. Add your own OpenAI API key in index.js.
-   ![Screenshot](/auth.png?raw=true "Optional Title") 
+   ![Screenshot](/auth.png?raw=true "Optional Title")
+   
 
-3.  Run local Backend server in "TweakGPT" folder
+4.  Run local Backend server in "TweakGPT" folder
 
 ```bash
   node index.js

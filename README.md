@@ -37,7 +37,7 @@ A ChatGpt clone with enhanced features.
 4.  Run Frontend using new terminal in "client" folder
 
 ```bash
-  npm run preview
+  npm run dev
 ```
 
 

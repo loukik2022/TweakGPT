@@ -1,14 +1,12 @@
 // dependencies: openai, express, body-parser, cors
-const { Configuration, OpenAIApi } = require("openai");
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const OpenAI = require("openai");
 
-// OpenAI API key authentication
-const configuration = new Configuration({
-  apiKey: "YOUR_API_KEY"
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
 });
-const openai = new OpenAIApi(configuration);
 
 // Express server setup
 const app = express();
@@ -50,7 +48,7 @@ app.post("/", async (req, res) => {
   // If userPrompt is present, make the OpenAI API call
   if (userPrompt) {
     try {
-      const completion = await openai.createChatCompletion({
+      const completion = await openai.chat.completions.create({
         model: model,
         messages: [
           {
@@ -66,8 +64,8 @@ app.post("/", async (req, res) => {
         temperature: temperature,
         top_p: top_p
       });
-
-      const response = completion.data.choices[0].message.content;
+      
+      const response = completion.choices[0].message.content;
       res.send({
         gpt: response
       });
@@ -84,7 +82,7 @@ app.post("/", async (req, res) => {
 // send the array of object of models as JSON object to frontend, 
 //  access each model using models.data[index].id
 app.get('/models', (req, res) => {
-  openai.listModels()
+  openai.models.list()
     .then((response) => {
       const modelsData = response.data;
       res.send(modelsData);

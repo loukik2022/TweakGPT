@@ -5,7 +5,7 @@ const fetchModelsData = async () => {
    try {
       const response = await fetch("http://localhost:5174/models");
       const data = await response.json();
-      const models = data.data
+      const models = data
          .filter(modelObject => modelObject.id.includes("3.5"))
          .map(modelObject => modelObject.id);
 
